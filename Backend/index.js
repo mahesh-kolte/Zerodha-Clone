@@ -212,6 +212,12 @@ app.get("/allPositions", async (req, res) => {
 
   res.send("Order saved!");
 });
+
+app.get("/", (req, res) => {
+  res.send("Backend Running Successfully");
+});
+
+
 app.listen(PORT, () => {
   console.log("App started!");
   mongoose.connect(uri);
